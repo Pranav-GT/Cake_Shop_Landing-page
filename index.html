@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=== FAVICON ===-->
+    <link rel="shortcut icon" href="Images/favicon.png">
+
+    <!--=== CSS ===-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--=== REMIXICONS ===-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+    <!--=== Swiper css ===-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <title>Cake-House</title>
+</head>
+<body>
+
+    <!--====== Header & nav  ======-->
+    <header class="header" id="header">
+        <nav class="nav_container">
+            <a href="/index.html" class="nav_logo">
+                <img src="Images/logo.svg" alt="Logo Delizia">
+                <span>Cake-House</span>
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li>
+                        <a href="#home" class="nav_links">Home</a>
+                    </li>
+                     <li>
+                        <a href="#about" class="nav_links">About Us</a>
+                    </li>
+                     <li>
+                        <a href="#products" class="nav_links">Products</a>
+                    </li>
+                     <li>
+                        <a href="#testimonial" class="nav_links">Testimonials</a>
+                    </li>
+                     <li>
+                        <a href="#contact" class="nav_links">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav_close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+
+                <img src="Images/leaf-3.png" alt="" class="nav_img">
+
+            </div>
+            <button class="nav_toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <i class="ri-menu-fill"></i>
+                </button>
+        </nav>
+    </header>
+
+    <!--=== MAIN ===-->
+    <main class="main">
+
+    <!--====== Home Section  ======-->
+    <section class="home_section" id="home">
+
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Love At First Bite</h2>
+                <p class="description">We create handcrafted cakes made with love, premium ingredients, and a touch of magic. Because life's sweetest moments deserve to be 
+                celebrated in a special way.</p>
+                
+                <div class="buttons">
+                    <a href="#" class="button order-now">Order Now</a>
+                </div>    
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/Home-img.png" alt="hero" class="hero-image">
+            </div>
+          </div>
+
+    </section>
+
+    <!--====== About Section  ======-->
+    <section class="about_section" id="about">
+        <div class="section-content">
+                <div class="about-img-wrapper">
+                    <img src="images/about-img.png" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section_title">About Us</h2>
+                    <p class="text">We are a bakery specializing in homemade desserts, custom   cakes, brownies, and a wide variety of gourmet sweets. Our passion for baking 
+                    allows us to create perfect sweet experiences for celebrations, special 
+                    events, or simply to enjoy anytime.</p>
+                    <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" class="social-link"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" class="social-link"><i class="ri-twitter-x-line"></i></a>
+                </div>
+                </div>
+            </div>
+    </section>
+    <!--====== Products Section  ======-->
+    <section class="products_section" id="products">
+
+        <h2 class="section_title products_title">Our Products</h2>
+
+        <!-- Tab Buttons -->
+        <div class="tab_buttons">
+            <button class="tab_btn active" onclick="showTab('vanilla', this)">Vanilla</button>
+            <button class="tab_btn" onclick="showTab('chocolate', this)">Chocolate</button>
+            <button class="tab_btn" onclick="showTab('strawberry', this)">Strawberry</button>
+            <button class="tab_btn" onclick="showTab('others', this)">Others</button>
+        </div>
+
+        <!-- Vanilla Tab -->
+            <div class="grid tab_content" id="tab_vanilla">
+                <div class="grid_card">
+                    <img src="Images/V-1.png" alt="cake">
+                    <span class="card_label">Golden Hour</span>
+                    <p>A two-tier masterpiece with a lustrous gold base and ivory top, dressed in handcrafted sugar blooms. Pure romance for your big day.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/V-4.png" alt="cake">
+                    <span class="card_label">Pure Bliss</span>
+                    <p>Smooth, clean, and effortlessly chic. A single-tier vanilla dream adorned with a flowing cascade of fresh white orchids.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/v-3.png" alt="cake">
+                    <span class="card_label">Sweet Serenity</span>
+                    <p>Soft swirled buttercream meets fresh garden florals. Simple, elegant, and timeless,just like love should be.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/V-2.png" alt="cake">
+                    <span class="card_label">Ivory Lace</span>
+                    <p>Delicate lace embossing meets fresh white orchids and eucalyptus. A cake as beautiful as the moment itself.</p>
+                </div>
+            </div>
+
+        <!-- Chocolate Tab -->
+        <div class="grid tab_content" id="tab_chocolate">
+                <div class="grid_card">
+                    <img src="Images/chocolat-2.png" alt="cake">
+                    <span class="card_label">Cookies & Crave</span>
+                    <p>Silky milk chocolate buttercream meets a dark ganache drip, topped with crunchy Oreos and chocolate cigar rolls. Your favourite cookie, all grown up.
+</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/chocolat-3.png" alt="cake">
+                    <span class="card_label">The Loaded</span>
+                    <p>A towering chocolate buttercream drip cake piled high with Ferrero Rocher, chocolate bars and white chocolate curls. No such thing as too much chocolate here.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/chocolat-1.png" alt="cake">
+                    <span class="card_label">Midnight Indulgence</span>
+                    <p>Rich dark chocolate ganache dripping down the sides, crowned with piped rosettes and glossy red cherries. For those who don't do things halfway.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/Chocolate-4.png" alt="cake">
+                    <span class="card_label">Dark Romance</span>
+                    <p>Velvety smooth chocolate mousse frosting dusted to perfection, topped with a hand-piped chocolate rose and striped wafer rolls. Elegant, rich, and utterly irresistible.</p>
+                </div>
+            </div>
+
+        <!-- Strawberry Tab -->
+        <div class="grid tab_content" id="tab_strawberry">
+                <div class="grid_card">
+                    <img src="Images/s-4.png" alt="cake">
+                    <span class="card_label">Cherry on Top</span>
+                    <p>Fluffy pink cream dotted with chocolate chips, piled high with chocolate-dipped cherries. Sweet, cheeky, and totally extra.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/s-2.png" alt="cake">
+                    <span class="card_label">Ruby Velvet</span>
+                    <p>Classic red velvet coated in velvety crumbs, crowned with a cream cheese border and fresh raspberries. Bold, beautiful, and dangerously good.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/strawberry-1.png" alt="cake">
+                    <span class="card_label">Strawberry Cloud</span>
+                    <p>Dreamy white buttercream with blush pink drips, gold pearl sprinkles, fresh strawberry slices and white chocolate chunks. Pretty enough to frame, better to eat.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/strawberry-3.png" alt="cake">
+                    <span class="card_label">Raspberry Rush</span>
+                    <p>Rich dark sponge layers stacked with fluffy raspberry cream, dripping in a bold pink glaze and topped with a generous pile of fresh sugared raspberries. </p>
+                </div>
+            </div>    
+        
+        <!-- Others Tab -->
+        <div class="grid tab_content" id="tab_others">
+                <div class="grid_card">
+                    <img src="Images/brownie.png" alt="cake">
+                    <span class="card_label">The Classic Square</span>
+                    <p>Dense, fudgy dark chocolate brownies dusted with cocoa, served alongside silky caramel sauce and fresh whipped cream. Old school never tasted this good.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/cupcake.png" alt="cake">
+                    <span class="card_label">Tiramisu Cups</span>
+                    <p>Soft golden cupcakes piled with fluffy cream frosting, dusted with cocoa and scattered with mini chocolate chips. All the vibes of tiramisu, none of the wait.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/pie.png" alt="cake">
+                    <span class="card_label">Lattice & Blues</span>
+                    <p>A golden sugar-crusted lattice pie bursting with deep blueberry filling. Crispy on the outside, jammy on the inside.</p>
+                </div>
+                <div class="grid_card">
+                    <img src="Images/O-4.png" alt="cake">
+                    <span class="card_label">Molten Stack</span>
+                    <p>Rich cocoa cookies with a gooey dark chocolate centre, stacked high and dusted with cocoa powder. Break one open and watch the magic happen.</p>
+                </div>
+            </div>
+
+    </section>
+    <!--====== New Section  ======-->
+    <section class="testimonial_section" id="testimonial">
+  <h2 class="testimonial_title">Happy Customers</h2>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"Absolutely divine. Best cake I've ever had. Will keep coming back!"</p>
+        <div class="reviewer">
+          <div class="av">S</div>
+          <div><span class="r-name">Sara M.</span><span class="r-sub">Regular customer</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"The chocolate drip cake was unreal. 10/10 would order again!"</p>
+        <div class="reviewer">
+          <div class="av">J</div>
+          <div><span class="r-name">James R.</span><span class="r-sub">Birthday order</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"My wedding cake was a dream. Every guest asked where it was from!"</p>
+        <div class="reviewer">
+          <div class="av">L</div>
+          <div><span class="r-name">Layla K.</span><span class="r-sub">Wedding cake</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ordered twice already. The strawberry one is pure heaven!"</p>
+        <div class="reviewer">
+          <div class="av">A</div>
+          <div><span class="r-name">Amara T.</span><span class="r-sub">Verified buyer</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Great flavours and beautiful presentation every single time."</p>
+        <div class="reviewer">
+          <div class="av">D</div>
+          <div><span class="r-name">David L.</span><span class="r-sub">Custom order</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"The vanilla cake was so moist and perfectly sweet. Loved it!"</p>
+        <div class="reviewer">
+          <div class="av">M</div>
+          <div><span class="r-name">Mia F.</span><span class="r-sub">Verified buyer</span></div>
+        </div>
+      </div>
+      <!-- Duplicates for seamless loop -->
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"Absolutely divine. Best cake I've ever had. Will keep coming back!"</p>
+        <div class="reviewer">
+          <div class="av">S</div>
+          <div><span class="r-name">Sara M.</span><span class="r-sub">Regular customer</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"The chocolate drip cake was unreal. 10/10 would order again!"</p>
+        <div class="reviewer">
+          <div class="av">J</div>
+          <div><span class="r-name">James R.</span><span class="r-sub">Birthday order</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"My wedding cake was a dream. Every guest asked where it was from!"</p>
+        <div class="reviewer">
+          <div class="av">L</div>
+          <div><span class="r-name">Layla K.</span><span class="r-sub">Wedding cake</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ordered twice already. The strawberry one is pure heaven!"</p>
+        <div class="reviewer">
+          <div class="av">A</div>
+          <div><span class="r-name">Amara T.</span><span class="r-sub">Verified buyer</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Great flavours and beautiful presentation every single time."</p>
+        <div class="reviewer">
+          <div class="av">D</div>
+          <div><span class="r-name">David L.</span><span class="r-sub">Custom order</span></div>
+        </div>
+      </div>
+      <div class="mq-card">
+        <div class="stars">★★★★★</div>
+        <p>"The vanilla cake was so moist and perfectly sweet. Loved it!"</p>
+        <div class="reviewer">
+          <div class="av">M</div>
+          <div><span class="r-name">Mia F.</span><span class="r-sub">Verified buyer</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!--====== Contact  ======-->
+    <section class="contact_section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="ri-map-pin-fill"></i>
+                        <p>Shakti Krupa, Agiary Road, Thane H.o.</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="ri-mail-fill"></i>
+                        <p>CakeHouse@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="ri-phone-fill"></i>
+                        <p>(+91) 99887 76655</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="ri-time-line"></i>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="ri-time-line"></i>
+                        <p>Sunday : Closed</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea laceholder=" Your message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+    </div>
+    </section>
+    </main>
+
+    <!--Footer_section-->
+<footer class="footer">
+  <p class="footer_text">Copyright &copy; 2026 by Cake-House || All Rights Reserved.</p>
+
+  <div class="social-link-list">
+    <a href="#" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
+    <a href="#" class="social-link"><i class="ri-instagram-fill"></i></a>
+    <a href="#" class="social-link"><i class="ri-twitter-x-line"></i></a>
+  </div>
+</footer>
+    
+    <!--Linking Swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--=== MAIN JS ===-->
+    <script src="main.js"></script>
+</body>
+</html>
